@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script>
+        var picno=0;
+    var arr=["nature1.jpg","ram12.jpg","raj.jpg"];
+        function slide(){
+            pic=document.getElementById("im");
+            pic.src="img/"+arr[picno];
+            picno++;
+            if(picno==arr.length)
+                {
+                    picno=0;
+                }
+            window.setTimeout("slide()",500);
+        }
+    </script>
+    </head>
+    <body onload="slide()">
+    <img src="img/nature1.jpg" style="height: 300px; width: 50%;" id="im">
+    </body>
+</html>

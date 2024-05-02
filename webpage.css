@@ -1,0 +1,47 @@
+#header{
+height:100px;
+width:100%;
+background:aqua;
+}
+#logo{
+	height:100px;
+	width:160px;
+	float:left;
+}
+.img{
+	height:80px;
+	width:160px;
+	padding:10px;
+	border-right:3px solid white;
+}
+#title{
+	height:100px;
+	width:740px;
+	float:left;
+	
+}
+h1{
+	font-size:40px;
+	padding:10px;
+	margin:0px;
+	color:darkred;
+	margin-left:20px;
+}
+h1:after{
+	content:"M M I T BANSI SIDDHARTH NAGAR";
+	font-size:22px;
+	color:aliceblue;
+	display:block;
+}
+#icon{
+	height:100px;
+	width:430px;
+	float:left;
+}
+.icon1{
+	height:30px;
+	width:30px;
+	float:left;
+	margin-right:17px;
+	margin-top:40px;
+}

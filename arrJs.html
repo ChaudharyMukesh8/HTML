@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script>
+    
+    function arrex()
+        {
+            var op="";
+            var arr=["Red","green","teal","orange","aqua"];
+            op="<option>Select Color</option>";
+            for(i=0;i<arr.length;i++)
+                {
+                   op+="<option value="+arr[i]+">"+arr[i]+"</option>";
+                }
+            document.getElementById("ddlcon").innerHTML=op;
+        }
+        function ddlex(){
+            var ddl=document.getElementById("ddlcon").value;
+            document.getElementById("dv").style.background=ddl;
+            document.getElementById("dv").style.transition="6s";
+        }
+    </script>
+    </head>
+    <body onload="arrex()" >
+        Choose your Color:
+        <select id="ddlcon" onchange="ddlex()">
+        
+        </select>
+    <br>
+        <div id="dv" style="height: 300px;width:300px;"></div>
+    </body>
+</html>

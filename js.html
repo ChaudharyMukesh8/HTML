@@ -1,0 +1,78 @@
+<html>
+    
+    <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="row">
+     <div class="col-sm-12">
+        <div class="col-sm-4"></div>
+         <div class="col-sm-4 panel panel-body" style="background: aliceblue;margin-top: 5%">
+         Enter First Number
+             <input type="text" class="form-control" id="txt1"/>
+             Enter second Number
+             <input type="text" class="form-control" id="txt2"/>
+             Result
+             <input type="text" class="form-control" id="txt3"/>
+             <br>
+             <input type="button" class="btn btn-success" value="+" onclick="add()"/>
+                    <input type="button" class="btn btn-info" value="-" onclick="sub()"/>
+                    <input type="button" class="btn btn-danger" value="*" onclick="multi()"/>
+                    <input type="button" class="btn btn-warning" value="/" onclick="divide()"/>
+                    <input type="button" class="btn btn-default" value="C" onclick="trash()"/>
+         </div>
+         <script>
+         function add()
+             {
+                 var t1=Number(document.getElementById("txt1").value);
+                 var t2=Number(document.getElementById("txt2").value);
+                 var t3=document.getElementById("txt3");
+                 t3.value="Addition is:"+(t1+t2);
+                 t3.style.color="red";
+                 t3.style.fontSize="21px";
+                 t3.style.border="1px solid red";
+             }
+              function sub()
+             {
+                 var t1=Number(document.getElementById("txt1").value);
+                 var t2=Number(document.getElementById("txt2").value);
+                 var t3=document.getElementById("txt3");
+                 t3.value="Substraction is:"+(t1-t2);
+                 t3.style.color="green";
+                 t3.style.fontSize="21px";
+                 t3.style.border="1px solid green";
+             }
+              function multi()
+             {
+                 var t1=Number(document.getElementById("txt1").value);
+                 var t2=Number(document.getElementById("txt2").value);
+                 var t3=document.getElementById("txt3");
+                 t3.value="Multiplication is:"+(t1*t2);
+                 t3.style.color="purple";
+                 t3.style.fontSize="21px";
+                 t3.style.border="1px solid purple";
+             }
+             
+              function divide()
+             {
+                 var t1=Number(document.getElementById("txt1").value);
+                 var t2=Number(document.getElementById("txt2").value);
+                 var t3=document.getElementById("txt3");
+                 t3.value="Divide is:"+(t1/t2);
+                 t3.style.color="yellow";
+                 t3.style.fontSize="21px";
+                 t3.style.border="1px solid blue";
+             }
+              function trash()
+             {
+                 document.getElementById("txt1").value="";
+                 document.getElementById("txt2").value="";
+                 document.getElementById("txt3").value="";
+                 
+             }
+         </script>
+         <div class="col-sm-4"></div>
+        </div>   
+        </div>
+    </body>
+</html>
